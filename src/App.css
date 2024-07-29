@@ -1,0 +1,445 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #971a1a; 
+  color: white;/* Light gray background */
+}
+.form-container {
+  padding: 9px;
+  border-radius: 5px;
+}
+/* Customize form input */
+/* .form-control {
+  padding: 8px;
+} */
+.form-select {
+  padding: 8px;
+}
+/* Customize button */
+.btn-primary {
+  border-radius: 5px;
+}
+
+.button-holder {
+}
+
+button#registerBtn {
+  background-color: #e67b29;
+  border-color: #e67b29;
+}
+
+#registerBtn {
+  width: 40%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  height: 38px;
+  background-color: #a3161a;
+  border: 1px solid #a3161a;
+  border-radius: 5px;
+}
+
+
+
+.owl-nav button.owl-next {
+  color: white;
+}
+
+/* Style the date picker label */
+#lab {
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  font-size: 1.1rem; /* Slightly larger font size */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the text */
+  background: linear-gradient(
+    45deg,
+    #e67b29,
+    #e67b29
+  ); /* Gradient background */
+  padding: 5px 12px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+}
+.menu {
+  background-color: #fff;
+}
+
+.image-container {
+  background-color: white; /* Set the background color to white */
+  display: flex; /* Optionally, to center the image */
+  justify-content: center; /* Optionally, to center the image */
+  align-items: center; /* Optionally, to center the image */
+  padding: 10px; /* Add some padding around the image */
+}
+
+.menu-image {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.footer-bottom {
+  padding: 13px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.149);
+}
+.Copy-Right-Text {
+  color: #ffffff;
+}
+.Copy-Right-Text a {
+  color: #ffb606;
+}
+.terms-privacy li + li {
+  margin-left: 30px;
+}
+.terms-privacy li a {
+  color: #ffffff;
+  position: relative;
+}
+.terms-privacy li a:after {
+  position: absolute;
+  content: "-";
+  color: #ffffff;
+  display: inline-block;
+  top: 0;
+  right: -18px;
+}
+.terms-privacy li + li a:after {
+  display: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whatsapp-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: green;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px; /* Center icon vertically */
+  color: white;
+  font-size: 50px;
+  margin-right: 10px; /* Space between icons */
+  text-decoration: none;
+  z-index: 9999;
+}
+.call-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  z-index: 9999;
+  background-color: #ec4b4b;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.call-icon:hover {
+  background-color: #f0f0f0;
+}
+
+/* .call-icon a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.call-icon a:hover {
+  color: #555555;
+} */
+
+#fb {
+  color: rgb(235, 218, 218);
+  font-size: 20px;
+}
+#twi {
+  color: rgb(235, 218, 218);
+  font-size: 20px;
+}
+#ins {
+  color: rgb(235, 218, 218);
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+#hre {
+  width: 100%;
+  height: 3px;
+  background-color: #ff1010; /* Change color as per your design */
+  border: none;
+  margin: 15px 0;
+  position: relative;
+  z-index: 9999;
+}
+
+#hre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #c4f808; /* Change color as per your design */
+  animation: slideLeft 2s ease infinite;
+}
+
+#hre::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #1e52ff; /* Change color as per your design */
+  animation: slideRight 2s ease infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.date-picker {
+  width: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  font-weight: bolder;
+}
+
+/* .gradient-text {
+  background: linear-gradient(to right, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    red,
+    yellow,
+    rgb(209, 241, 24),
+    rgb(245, 84, 10),
+    rgb(169, 235, 15)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.table {
+  margin-top: 20px;
+}
+/* src/components/Table.css */
+.custom-table-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.custom-table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.custom-table th {
+  background-color: #343a40;
+  color: white !important; /* Ensure the text color is white */
+  border: none;
+}
+
+.custom-table td {
+  background-color: #333; /* Set background color to dark */
+  color: white !important; /* Ensure the text color is white */
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+table, th, td {
+  color: white !important; /* Ensure the text color is white for all tables, headers, and cells */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+  animation: fadeIn 2s;
+}
+
+.form-control, .form-select, .date-picker {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 2px solid #f16661;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.form-group label {
+  color: #34495e;
+  font-weight: bold;
+  
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+  .date-picker {
+    width: 240%;
+  }
+}
+
+
+#test{
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(145deg, #ff4747, #d40000); /* Add a gradient for a better look */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid;
+border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  animation: rotate3D 5s linear infinite; /* 3D Rotation Animation */
+}
+
+/* Keyframes for 3D rotation animation */
+@keyframes rotate3D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-link li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-link li:hover {
+  transform: scale(1.2); /* Scale on hover */
+}
+
+.social-link img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.social-link img:hover {
+  filter: grayscale(0%);
+}
+
+.footer-social-media a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-social-media a:hover {
+  color: #ffcccc;
+}
+
+
+
+
+
+
