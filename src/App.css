@@ -5,26 +5,20 @@ body {
 }
 
 body {
-  background-color: #971a1a; 
-  color: white;/* Light gray background */
+  background-color: #971a1a;
+  color: white; /* Light gray background */
 }
 .form-container {
   padding: 9px;
   border-radius: 5px;
 }
-/* Customize form input */
-/* .form-control {
-  padding: 8px;
-} */
+
 .form-select {
   padding: 8px;
 }
 /* Customize button */
 .btn-primary {
   border-radius: 5px;
-}
-
-.button-holder {
 }
 
 button#registerBtn {
@@ -43,8 +37,6 @@ button#registerBtn {
   border-radius: 5px;
 }
 
-
-
 .owl-nav button.owl-next {
   color: white;
 }
@@ -53,14 +45,14 @@ button#registerBtn {
 #lab {
   font-weight: bold;
   color: #ffffff; /* Text color */
-  font-size: 1.1rem; /* Slightly larger font size */
+  font-size: 1rem; /* Slightly larger font size */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the text */
   background: linear-gradient(
     45deg,
     #e67b29,
     #e67b29
   ); /* Gradient background */
-  padding: 5px 12px; /* Padding for better spacing */
+  padding: 7px 3px; /* Padding for better spacing */
   border-radius: 5px; /* Rounded corners */
   text-align: center;
 }
@@ -68,13 +60,7 @@ button#registerBtn {
   background-color: #fff;
 }
 
-.image-container {
-  background-color: white; /* Set the background color to white */
-  display: flex; /* Optionally, to center the image */
-  justify-content: center; /* Optionally, to center the image */
-  align-items: center; /* Optionally, to center the image */
-  padding: 10px; /* Add some padding around the image */
-}
+
 
 .menu-image {
   max-width: 100%; /* Ensure the image is responsive */
@@ -89,7 +75,7 @@ button#registerBtn {
   color: #ffffff;
 }
 .Copy-Right-Text a {
-  color: #ffb606;
+  color: #ffd910;
 }
 .terms-privacy li + li {
   margin-left: 30px;
@@ -240,7 +226,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
-.gradient-text {
+/* .gradient-text {
   background: linear-gradient(
     to right,
     red,
@@ -251,9 +237,7 @@ a {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-
+} */
 
 .table {
   margin-top: 20px;
@@ -290,57 +274,28 @@ a {
   text-align: left;
 }
 
-
-table, th, td {
+table,
+th,
+td {
   color: white !important; /* Ensure the text color is white for all tables, headers, and cells */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 img {
   animation: fadeIn 2s;
 }
 
-.form-control, .form-select, .date-picker {
+.form-control,
+.form-select {
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 6px 20px;
   border: 2px solid #f16661;
   transition: all 0.3s ease-in-out;
 }
 
-
-
 .form-group label {
   color: #34495e;
   font-weight: bold;
-  
 }
-
 
 @keyframes fadeIn {
   0% {
@@ -351,33 +306,22 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
-
-
 }
-
-
 
 @media only screen and (min-width: 992px) {
   .date-picker {
-    width: 240%;
+    width: 100%;
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .date-picker {
+    width: 20%; /* Adjust width as needed for medium screens */
+  }
+}
 
-#test{
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(145deg, #ff4747, #d40000); /* Add a gradient for a better look */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#test {
   position: relative;
-  border-radius: 50%;
-  border: 1px solid;
-border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-  animation: rotate3D 5s linear infinite; /* 3D Rotation Animation */
 }
 
 /* Keyframes for 3D rotation animation */
@@ -392,21 +336,6 @@ border: 1px solid rgba(255, 255, 255, 0.15);
     transform: rotateX(360deg) rotateY(360deg);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .social-link li {
   list-style: none;
@@ -438,8 +367,87 @@ border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffcccc;
 }
 
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: rgb(111, 24, 252);
+  color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+}
+
+tr {
+  background-color: #f57b2b !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination .active a {
+  background-color: rgb(31, 15, 248);
+  color: #fff;
+  border: 1px solid #900;
+}
+
+.search-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  border-color: #900;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+#brand {
+  border-radius: 30px;
+  border: 1px solid red;
+}
+
+#num-what {
+  font-size: 20px;
+}
+#num-call {
+  color: rgb(22, 22, 206);
+}
 
 
-
-
+.check{
+  color: #26fb26;
+  margin-left: 4px;
+  font-size: large;
+}
 

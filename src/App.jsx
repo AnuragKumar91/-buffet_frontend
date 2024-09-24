@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import './App.css';
-import Form from './components/Form';
-import List from './components/List';
+import "./App.css";
+import Form from "./components/Form";
+import Test from "./components/Test";
+
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Form />} />
-          <Route path="/list-of-buffet-booking" element={<List />} />
+          <Route path="/test" element={<Test />} />
+          
         </Routes>
       </Router>
     </>
